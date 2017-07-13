@@ -1,0 +1,12 @@
+public class HelloWorld {
+    public static void main(String[] args) {
+    StringBuilder str = new StringBuilder();
+		// 追加字符串
+		str.append("fgjgjfbjfbsgssabaaba");
+		// 从前往后每隔三位插入逗号
+		for(int i = 3;i<str.length();i=i+3){
+		    str.insert(i,',');
+		}
+		System.out.print(str.toString());
+	}
+}
